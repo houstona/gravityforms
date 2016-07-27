@@ -1,10 +1,24 @@
 {
     "name": "arronhouston/gravityforms",
+    "description": "Mirror of Gravity Forms to add composer support",
+    "type": "wordpress-plugin",
     "authors": [
         {
             "name": "Arron Houston",
             "email": "arron@revel.in"
         }
     ],
-    "require": {}
+    "config": {
+        "preferred-install": "dist"
+    },
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"http://wpackagist.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "composer/installers": "~1.0.12"
+    }
 }
